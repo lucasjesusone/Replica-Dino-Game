@@ -55,9 +55,8 @@ function createCactus() {
         } else if(cactusPosition > 0 && cactusPosition < 60 && position < 60) { 
             // Game Over
             clearInterval(leftInterval);
-            document
-            .body
-            .innerHTML = '<h1 style="text-align: center; color: #666666; margin-top: 50px; font-family: Arial;">Fim de Jogo</h1>';
+            
+            document.body.innerHTML = '<h1 style="text-align: center; color: #666666; font-family: Arial;">Fim de Jogo  <br/> By: Lucas Gabriel de Jesus</h1>';
         } else {  
             cactusPosition -= 10;
             cactus.style.left = cactusPosition + 'px'
